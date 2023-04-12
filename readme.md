@@ -20,3 +20,4 @@ Esse repositório será focado nas aulas sobre flexbox da DIO
 ## Aula 02
 
 - Flex Grow
+- Flex Basis
