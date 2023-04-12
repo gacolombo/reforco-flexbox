@@ -23,3 +23,5 @@ Esse repositório será focado nas aulas sobre flexbox da DIO
 - Flex Basis
 - Flex Shrink
 - Flex
+- Order
+- Align Self
