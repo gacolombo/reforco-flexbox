@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Shrink</title>
+    <style>
+        .flex-container{
+            display: flex;
+            border: 1px dotted black;
+            margin: 0 auto;
+            margin-bottom: 5px;
+            max-width: 350px;
+        }
+        
+        .flex-item{
+            background-color: violet;
+            color: white;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .fs-0{
+            flex-shrink: 0;
+            flex-basis: 100px;
+        }
+
+        .fs-1{
+            flex-shrink: 1;
+        }
+
+        .fs-2{
+            flex-shrink: 2;
+            flex-basis: 100px;
+        }
+
+        .fs-3{
+            flex-shrink: 3;
+            flex-basis: 100px;
+        }
+        
+        .fg-1{
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <p>Flex Shrink: 1</p>
+    <section class="flex-container">
+        <div class="flex-item fs-1 fg-1">A</div>
+        <div class="flex-item fs-1 fg-1">BB</div>
+        <div class="flex-item fs-1 fg-1">CCC</div>
+        <div class="flex-item fs-1 fg-1">DDDD</div>
+        <div class="flex-item fs-1 fg-1">EEEEE</div>
+    </section>
+    <section class="flex-container">
+        <div class="flex-item fs-1 fg-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt asperiores deleniti in porro odit autem aperiam, soluta iste ut nisi, omnis earum atque recusandae aut? Cupiditate eveniet repellat odit dicta.</div>
+        <div class="flex-item fs-1 fg-1">BB</div>
+        <div class="flex-item fs-1 fg-1">CCC</div>
+        <div class="flex-item fs-1 fg-1">DDDD</div>
+        <div class="flex-item fs-1 fg-1">EEEEE</div>
+    </section>
+
+    <p>Flex Shrink: 0 / basis: 100px</p>
+    <section class="flex-container">
+        <div class="flex-item fs-0 fg-1">Lorem ipsum dolor sit amet consei.</div>
+        <div class="flex-item fs-0 fg-1">BB</div>
+        <div class="flex-item fs-0 fg-1">CCC</div>
+        <div class="flex-item fs-0 fg-1">DDDD</div>
+    </section>
+
+    <p>Flex Shrink: mix</p>
+    <section class="flex-container">
+        <div class="flex-item fs-1 fg-1">Lorem ipsum dolor sit amet consei.</div>
+        <div class="flex-item fs-2 fg-1">BB</div>
+        <div class="flex-item fs-2 fg-1">CCC</div>
+        <div class="flex-item fs-3 fg-1">DDDD</div>
+    </section>
+    
+</body>
+</html>
