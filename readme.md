@@ -14,3 +14,4 @@ Esse repositório será focado nas aulas sobre flexbox da DIO
 - Flex Wrap
 - Flex Flow
 - Justify content
+- Align Items
