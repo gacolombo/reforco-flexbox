@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Grow</title>
+    <style>
+        .flex-container{
+            display: flex;
+            border: 1px dotted black;
+            margin: 0 auto;
+            max-width: 300px;
+        }
+        
+        .flex-item{
+            background-color: violet;
+            color: white;
+            text-align: center;
+            margin: 5px;
+            padding: 10px;
+        }
+
+        .fg-0{
+            flex-grow: 0;
+        }
+
+        .fg-1{
+            flex-grow: 1;
+        }
+
+        .fg-2{
+            flex-grow: 2;
+        }
+
+        .fg-3{
+            flex-grow: 3;
+        }
+    </style>
+</head>
+<body>
+    <p>fg-0</p>
+    <section class="flex-container">
+        <div class="flex-item fg-0">A</div>
+        <div class="flex-item fg-0">B</div>
+        <div class="flex-item fg-0">C</div>
+        <div class="flex-item fg-0">D</div>
+    </section>
+
+    <p>fg-0, 1, 2, 3</p>
+    <section class="flex-container">
+        <div class="flex-item fg-0">A</div>
+        <div class="flex-item fg-1">B</div>
+        <div class="flex-item fg-2">C</div>
+        <div class="flex-item fg-3">D</div>
+    </section>
+
+    <p>fg-0, 1, 2, 3 com tamanhos de conteúdo diferentes</p>
+    <section class="flex-container">
+        <div class="flex-item fg-0">AA</div>
+        <div class="flex-item fg-1">BBBB</div>
+        <div class="flex-item fg-2">CC</div>
+        <div class="flex-item fg-3">D</div>
+    </section>
+</body>
+</html>
