@@ -10,3 +10,5 @@ Esse repositório será focado nas aulas sobre flexbox da DIO
 3. Conhecer inicialmente algumas propriedades
 
 - Display Flex
+- Flex Direction
+
