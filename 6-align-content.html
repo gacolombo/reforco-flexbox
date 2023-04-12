@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align content</title>
+    <style>
+        .container-flex{
+            display: flex;
+            border: 2px dotted black;
+            height: 400px;
+            max-width: 300px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+        }
+
+        .item-flex{
+            background-color: violet;
+            color: white;
+            padding: 0 5px;
+            margin: 5px;
+            flex: 1;
+            text-align: center;
+        }
+
+        .stretch{
+            align-content: stretch;
+        }
+
+        .center{
+            align-content: center;
+        }
+
+        .flex-start{
+            align-content: flex-start;
+        }
+
+        .flex-end{
+            align-content: flex-end;
+        }
+
+        .space-around{
+            align-content: space-around;
+        }
+
+        .space-between{
+            align-content: space-between;
+        }
+
+    </style>
+</head>
+<body>
+    <p>Stretch</p>
+    <div class="container-flex stretch">
+        <div class="item-flex">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut egestas erat</div>
+        <div class="item-flex">Donec rutrum felis ut justo accumsan tinciduntmi.</div>
+        <div class="item-flex">Ut id congue lacus.</div>
+        <div class="item-flex">Pellentesque consequat vehicula est eu lobor.</div>
+        <div class="item-flex">Interdum etus.</div>
+        <div class="item-flex">Nam et tincidunt mauris, dapibus mattis elit. Ut hendrerit,.</div>
+        <div class="item-flex">Nam et tincidunt mauris, dapibus mattis elit. Ut hendrerit,.</div>
+    </div>
+    
+    <p>Center</p>
+    <div class="container-flex center">
+        <div class="item-flex">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut egestas erat</div>
+        <div class="item-flex">Donec rutrum felis ut justo accumsan tinciduntmi.</div>
+        <div class="item-flex">Ut id congue lacus.</div>
+        <div class="item-flex">Pellentesque consequat vehicula est eu lobor.</div>
+        <div class="item-flex">Interdum etus.</div>
+        <div class="item-flex">Nam et tincidunt mauris, dapibus mattis elit. Ut hendrerit,.</div>
+        <div class="item-flex">Nam et tincidunt mauris, dapibus mattis elit. Ut hendrerit,.</div>
+    </div>
+
+    <p>flex-start</p>
+    <div class="container-flex flex-start">
+        <div class="item-flex">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut egestas erat</div>
+        <div class="item-flex">Donec rutrum felis ut justo accumsan tinciduntmi.</div>
+        <div class="item-flex">Ut id congue lacus.</div>
+        <div class="item-flex">Pellentesque consequat vehicula est eu lobor.</div>
+        <div class="item-flex">Interdum etus.</div>
+        <div class="item-flex">Nam et tincidunt mauris, dapibus mattis elit. Ut hendrerit,.</div>
+        <div class="item-flex">Nam et tincidunt mauris, dapibus mattis elit. Ut hendrerit,.</div>
+    </div>
+
+    <p>flex-end</p>
+    <div class="container-flex flex-end">
+        <div class="item-flex">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut egestas erat</div>
+        <div class="item-flex">Donec rutrum felis ut justo accumsan tinciduntmi.</div>
+        <div class="item-flex">Ut id congue lacus.</div>
+        <div class="item-flex">Pellentesque consequat vehicula est eu lobor.</div>
+        <div class="item-flex">Interdum etus.</div>
+        <div class="item-flex">Nam et tincidunt mauris, dapibus mattis elit. Ut hendrerit,.</div>
+        <div class="item-flex">Nam et tincidunt mauris, dapibus mattis elit. Ut hendrerit,.</div>
+    </div>
+
+    <p>space-around</p>
+    <div class="container-flex space-around">
+        <div class="item-flex">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut egestas erat</div>
+        <div class="item-flex">Donec rutrum felis ut justo accumsan tinciduntmi.</div>
+        <div class="item-flex">Ut id congue lacus.</div>
+        <div class="item-flex">Pellentesque consequat vehicula est eu lobor.</div>
+        <div class="item-flex">Interdum etus.</div>
+        <div class="item-flex">Nam et tincidunt mauris, dapibus mattis elit. Ut hendrerit,.</div>
+        <div class="item-flex">Nam et tincidunt mauris, dapibus mattis elit. Ut hendrerit,.</div>
+    </div>
+
+    <p>space-between</p>
+    <div class="container-flex space-between">
+        <div class="item-flex">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut egestas erat</div>
+        <div class="item-flex">Donec rutrum felis ut justo accumsan tinciduntmi.</div>
+        <div class="item-flex">Ut id congue lacus.</div>
+        <div class="item-flex">Pellentesque consequat vehicula est eu lobor.</div>
+        <div class="item-flex">Interdum etus.</div>
+        <div class="item-flex">Nam et tincidunt mauris, dapibus mattis elit. Ut hendrerit,.</div>
+        <div class="item-flex">Nam et tincidunt mauris, dapibus mattis elit. Ut hendrerit,.</div>
+    </div>
+
+</body>
+</html>
