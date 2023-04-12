@@ -22,3 +22,4 @@ Esse repositório será focado nas aulas sobre flexbox da DIO
 - Flex Grow
 - Flex Basis
 - Flex Shrink
+- Flex

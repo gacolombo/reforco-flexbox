@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .flex-container{
+            display: flex;
+            border: 1px dotted black;
+            margin: 0 auto;
+            margin-bottom: 5px;
+            max-width: 400px;
+        }
+        
+        .flex-item{
+            background-color: violet;
+            color: white;
+            text-align: center;
+            font-size: 24px;
+            margin: 5px;
+        }
+
+        .largura{
+            width: 200px;
+        }
+
+        .flex-1{
+            flex: 1;
+            /* grow = 1, shrink = 1, basis = 0 */
+        }
+
+        .flex-2{
+            flex: 2;
+            /* grow = 2, shrink = 1, basis = 0 */
+        }
+    </style>
+</head>
+<body>
+    <p><strong>Flex 1</strong></p>
+    <section class="flex-container">
+        <div class="flex-item flex-1">A</div>
+        <div class="flex-item flex-1">BBB</div>
+        <div class="flex-item flex-1">CC</div>
+        <div class="flex-item flex-1">D</div>
+        <div class="flex-item flex-1">EF</div>
+    </section>
+
+    <p><strong>Flex mix</strong></p>
+    <section class="flex-container">
+        <div class="flex-item flex-1">A</div>
+        <div class="flex-item flex-2">BBB</div>
+        <div class="flex-item flex-2">CC</div>
+        <div class="flex-item flex-1">D</div>
+        <div class="flex-item flex-1">EF</div>
+    </section>
+
+    <p><strong>width ignorado -> basis = 0</strong></p>
+    <section class="flex-container">
+        <div class="flex-item flex-1 largura">A</div>
+        <div class="flex-item flex-1 largura">BBB</div>
+        <div class="flex-item flex-1 largura">CC</div>
+        <div class="flex-item flex-1 largura">D</div>
+        <div class="flex-item flex-1 largura">EF</div>
+    </section>
+    
+</body>
+</html>
